@@ -64,3 +64,14 @@ console.log(OppositeNumber(5))
 console.log(OppositeNumber(-25))
 console.log(OppositeNumber(0))
 
+
+
+// 06.Simple Array Sum
+const arraySum = (numbers) => {
+    let sum = 0;
+    for (let i of numbers) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(arraySum([1, 2, 3, 4, 5]))
