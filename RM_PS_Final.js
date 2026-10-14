@@ -75,3 +75,18 @@ const arraySum = (numbers) => {
     return sum;
 }
 console.log(arraySum([1, 2, 3, 4, 5]))
+
+
+// 07.sleepIn
+const isVocation = (weekday, vocation) => {
+    if (weekday === false || vocation === true) {
+        return true;
+    }
+    else {
+        return false
+    }
+}
+console.log(isVocation(true, false));
+console.log(isVocation(false, true));
+console.log(isVocation(true, true));
+console.log(isVocation(true, false));
