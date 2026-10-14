@@ -27,3 +27,21 @@ const checkEvenOrOdd = (number) => {
 }
 console.log(checkEvenOrOdd(6))
 console.log(checkEvenOrOdd(3))
+
+
+
+// 04.Return Negative
+const returnNegetive = (number) => {
+    if (number > 0) {
+        return -number;
+    }
+    if (number < 0) {
+        return number;
+    }
+    else {
+        return number;
+    }
+}
+console.log(returnNegetive(5));
+console.log(returnNegetive(-5));
+console.log(returnNegetive(0));
