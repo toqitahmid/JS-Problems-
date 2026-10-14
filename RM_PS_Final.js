@@ -45,3 +45,22 @@ const returnNegetive = (number) => {
 console.log(returnNegetive(5));
 console.log(returnNegetive(-5));
 console.log(returnNegetive(0));
+
+
+
+// 05.Opposite Number
+const OppositeNumber = (number) => {
+    if (number > 0) {
+        return -number;
+    }
+    if (number < 0) {
+        return number - number - number;
+    }
+    else {
+        return number;
+    }
+}
+console.log(OppositeNumber(5))
+console.log(OppositeNumber(-25))
+console.log(OppositeNumber(0))
+
