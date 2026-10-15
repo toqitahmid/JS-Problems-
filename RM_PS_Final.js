@@ -115,3 +115,16 @@ const sumDouble = (number1, number2) => {
 }
 console.log(sumDouble(5, 5))
 console.log(sumDouble(5, 4))
+
+
+// 10. diff21
+const diff21 = (number) => {
+    if (number <= 21) {
+        return 21 - number;
+    }
+    if (number > 21) {
+        return (number - 21) * 2;
+    }
+}
+console.log(diff21(25))
+console.log(diff21(6))
