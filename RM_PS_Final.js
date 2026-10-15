@@ -90,3 +90,15 @@ console.log(sleepIn(true, false));
 console.log(sleepIn(false, true));
 console.log(sleepIn(true, true));
 console.log(sleepIn(true, false));
+
+
+// 08. monkeyTrouble
+const monkeyTrouble = (monkey1, monkey2) => {
+    if ((monkey1 === true && monkey2 === true) || (monkey1 !== true && monkey2 !== true)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(monkeyTrouble(true, true))
