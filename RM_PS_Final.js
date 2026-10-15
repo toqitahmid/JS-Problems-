@@ -128,3 +128,16 @@ const diff21 = (number) => {
 }
 console.log(diff21(25))
 console.log(diff21(6))
+
+
+// 11. parrotTrouble
+const parrotTrouble = (talking, hours) => {
+    if (talking === true && hours <= 7) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(parrotTrouble(true, 4));
+console.log(parrotTrouble(true, 9));
