@@ -102,3 +102,16 @@ const monkeyTrouble = (monkey1, monkey2) => {
     }
 }
 console.log(monkeyTrouble(true, true))
+
+
+// 09. sumDouble
+const sumDouble = (number1, number2) => {
+    if (number1 === number2) {
+        return (number1 + number2) * 2;
+    }
+    else {
+        return number1 + number2;
+    }
+}
+console.log(sumDouble(5, 5))
+console.log(sumDouble(5, 4))
