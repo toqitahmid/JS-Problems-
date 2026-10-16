@@ -141,3 +141,20 @@ const parrotTrouble = (talking, hours) => {
 }
 console.log(parrotTrouble(true, 4));
 console.log(parrotTrouble(true, 9));
+
+
+// 12. makes10
+const makes10 = (a, b) => {
+    if (a === 10 && b === 10) {
+        return true;
+    }
+    if (a + b === 10) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(makes10(10, 10));
+console.log(makes10(10, 20));
+console.log(makes10(4, 6));
