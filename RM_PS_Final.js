@@ -173,3 +173,84 @@ console.log(nearHundred(90));
 console.log(nearHundred(80));
 console.log(nearHundred(210));
 console.log(nearHundred(190));
+
+
+// 14. posNeg
+const posNeg = (a, b, neg) => {
+    if (neg === true) {
+        if (a < 0 && b < 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        if ((a > 0 && b < 0) || (b > 0 && a < 0)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+console.log(posNeg(-1, 2, true))
+
+
+// 15. notString
+const notString = (str) => {
+    if (str.slice(0, 4) !== "not ") {
+        return "not".concat(" ", str);
+    }
+    else {
+        return str;
+    }
+}
+console.log(notString("done"))
+console.log(notString("not done"))
+
+
+// 16. Compare the Triplets
+const compareTriplets = (a, b) => {
+    let scoreA = 0;
+    let scoreB = 0;
+    let array = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > b[i]) {
+            scoreA++;
+        }
+        if (a[i] < b[i]) {
+            scoreB++;
+        }
+    }
+    array.push(scoreA);
+    array.push(scoreB);
+    return array;
+}
+
+console.log(compareTriplets([1, 4, 6], [2, 7, 2]))
+
+
+
+// 17. A Very Big Sum
+const aVeryBigSum = (a) => {
+    let sum = 0;
+    for (let i of a) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(aVeryBigSum([1000000001, 1000000002, 1000000003]))
+
+
+
+// 18. Staircase
+const staircase = (n) => {
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j <= i; j++) {
+            console.log("#")
+        }
+        console.log("\n")
+    }
+}
+staircase(4)
