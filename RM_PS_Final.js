@@ -158,3 +158,18 @@ const makes10 = (a, b) => {
 console.log(makes10(10, 10));
 console.log(makes10(10, 20));
 console.log(makes10(4, 6));
+
+
+// 13. nearHundred
+const nearHundred = (n) => {
+    if ((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(nearHundred(90));
+console.log(nearHundred(80));
+console.log(nearHundred(210));
+console.log(nearHundred(190));
