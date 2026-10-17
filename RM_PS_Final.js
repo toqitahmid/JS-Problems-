@@ -1,37 +1,25 @@
 // 01. Solve Me First
-const solveMeFirst = (a, b) => {
+var solveMeFirst = function (a, b) {
     return a + b;
-}
-console.log(solveMeFirst(5, 5));
-console.log(solveMeFirst(10, 5));
+};
 
-
-
-//02. Multiply
-const multiply = (a, b) => {
+// 02. Multiply
+var multiply = function (a, b) {
     return a * b;
-}
-console.log(multiply(5, 5));
-console.log(multiply(10, 5));
+};
 
-
-
-// 03.Even or Odd
-const evenOrOdd = (number) => {
+// 03. Even or Odd
+var evenOrOdd = function (number) {
     if (number % 2 === 0) {
         return "Even";
     }
     else {
         return "Odd";
     }
-}
-console.log(evenOrOdd(6))
-console.log(evenOrOdd(3))
+};
 
-
-
-// 04.Return Negative
-const makeNegative = (number) => {
+// 04. Return Negative
+var makeNegative = function (number) {
     if (number > 0) {
         return -number;
     }
@@ -41,111 +29,83 @@ const makeNegative = (number) => {
     else {
         return number;
     }
-}
-console.log(makeNegative(5));
-console.log(makeNegative(-5));
-console.log(makeNegative(0));
+};
 
-
-
-// 05.Opposite Number
-const opposite = (number) => {
+// 05. Opposite Number
+var opposite = function (number) {
     if (number > 0) {
         return -number;
     }
     if (number < 0) {
-        return number - number - number;
+        return -number;
     }
     else {
         return number;
     }
-}
-console.log(opposite(5))
-console.log(opposite(-25))
-console.log(opposite(0))
+};
 
-
-
-// 06.Simple Array Sum
-const simpleArraySum = (numbers) => {
+// 06. Simple Array Sum
+var simpleArraySum = function (ar) {
     let sum = 0;
-    for (let i of numbers) {
+    for (let i of ar) {
         sum += i;
     }
     return sum;
-}
-console.log(simpleArraySum([1, 2, 3, 4, 5]))
+};
 
-
-// 07.sleepIn
-const sleepIn = (weekday, vocation) => {
-    if (weekday === false || vocation === true) {
+// 07. sleepIn
+var sleepIn = function (weekday, vacation) {
+    if (weekday === false || vacation === true) {
         return true;
     }
     else {
-        return false
+        return false;
     }
-}
-console.log(sleepIn(true, false));
-console.log(sleepIn(false, true));
-console.log(sleepIn(true, true));
-console.log(sleepIn(true, false));
-
+};
 
 // 08. monkeyTrouble
-const monkeyTrouble = (monkey1, monkey2) => {
-    if ((monkey1 === true && monkey2 === true) || (monkey1 !== true && monkey2 !== true)) {
+var monkeyTrouble = function (aSmile, bSmile) {
+    if ((aSmile === true && bSmile === true) || (aSmile !== true && bSmile !== true)) {
         return true;
     }
     else {
         return false;
     }
-}
-console.log(monkeyTrouble(true, true))
-
+};
 
 // 09. sumDouble
-const sumDouble = (number1, number2) => {
-    if (number1 === number2) {
-        return (number1 + number2) * 2;
+var sumDouble = function (a, b) {
+    if (a === b) {
+        return (a + b) * 2;
     }
     else {
-        return number1 + number2;
+        return a + b;
     }
-}
-console.log(sumDouble(5, 5))
-console.log(sumDouble(5, 4))
-
+};
 
 // 10. diff21
-const diff21 = (number) => {
-    if (number <= 21) {
-        return 21 - number;
+var diff21 = function (n) {
+    if (n <= 21) {
+        return 21 - n;
     }
-    if (number > 21) {
-        return (number - 21) * 2;
+    if (n > 21) {
+        return (n - 21) * 2;
     }
-}
-console.log(diff21(25))
-console.log(diff21(6))
-
+};
 
 // 11. parrotTrouble
-const parrotTrouble = (talking, hours) => {
-    if (talking === true && hours <= 7) {
+var parrotTrouble = function (talking, hour) {
+    if (talking === true && (hour < 7 || hour > 20)) {
         return true;
     }
     else {
         return false;
     }
-}
-console.log(parrotTrouble(true, 4));
-console.log(parrotTrouble(true, 9));
-
+};
 
 // 12. makes10
-const makes10 = (a, b) => {
-    if (a === 10 && b === 10) {
+var makes10 = function (a, b) {
+    if (a === 10 || b === 10) {
         return true;
     }
     if (a + b === 10) {
@@ -154,30 +114,21 @@ const makes10 = (a, b) => {
     else {
         return false;
     }
-}
-console.log(makes10(10, 10));
-console.log(makes10(10, 20));
-console.log(makes10(4, 6));
-
+};
 
 // 13. nearHundred
-const nearHundred = (n) => {
+var nearHundred = function (n) {
     if ((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10)) {
         return true;
     }
     else {
         return false;
     }
-}
-console.log(nearHundred(90));
-console.log(nearHundred(80));
-console.log(nearHundred(210));
-console.log(nearHundred(190));
-
+};
 
 // 14. posNeg
-const posNeg = (a, b, neg) => {
-    if (neg === true) {
+var posNeg = function (a, b, negative) {
+    if (negative === true) {
         if (a < 0 && b < 0) {
             return true;
         }
@@ -193,25 +144,20 @@ const posNeg = (a, b, neg) => {
             return false;
         }
     }
-}
-console.log(posNeg(-1, 2, true))
-
+};
 
 // 15. notString
-const notString = (str) => {
-    if (str.slice(0, 4) !== "not ") {
-        return "not".concat(" ", str);
-    }
-    else {
+var notString = function (str) {
+    if (str.startsWith("not")) {
         return str;
     }
-}
-console.log(notString("done"))
-console.log(notString("not done"))
-
+    else {
+        return "not " + str;
+    }
+};
 
 // 16. Compare the Triplets
-const compareTriplets = (a, b) => {
+var compareTriplets = function (a, b) {
     let scoreA = 0;
     let scoreB = 0;
     let array = [];
@@ -226,31 +172,105 @@ const compareTriplets = (a, b) => {
     array.push(scoreA);
     array.push(scoreB);
     return array;
-}
-
-console.log(compareTriplets([1, 4, 6], [2, 7, 2]))
-
-
+};
 
 // 17. A Very Big Sum
-const aVeryBigSum = (a) => {
+var aVeryBigSum = function (ar) {
     let sum = 0;
-    for (let i of a) {
+    for (let i of ar) {
         sum += i;
     }
     return sum;
-}
-console.log(aVeryBigSum([1000000001, 1000000002, 1000000003]))
-
-
+};
 
 // 18. Staircase
-const staircase = (n) => {
-    for (let i = 0; i < n; i++) {
-        for (let j = 0; j <= i; j++) {
-            console.log("#")
+var staircase = function (n) {
+    let result = "";
+    for (let i = 1; i <= n; i++) {
+        let spaces = " ".repeat(n - i);
+        let hashes = "#".repeat(i);
+        result += spaces + hashes;
+
+        if (i < n) {
+            result += "\n";
         }
-        console.log("\n")
     }
+    return result;
+};
+
+// 19. Grading Students
+var gradingStudents = function (grades) {
+    return grades.map(grade => {
+        if (grade < 38) {
+            return grade;
+        }
+        let reminder = grade % 5;
+        if (reminder >= 3) {
+            return grade += 5 - reminder;
+        }
+        return grade;
+    })
+};
+
+// 20. Time Conversion
+var timeConversion = function (s) {
+    let amPm = s.slice(-2);
+    let hour = s.slice(0, 2);
+    let restOfTime = s.slice(2, -2);
+
+    if (amPm === "AM" && hour === "12") {
+        hour = "00";
+    } else if (amPm === "PM" && hour !== "12") {
+        hour = String(Number(hour) + 12);
+    }
+
+    return hour + restOfTime;
+};
+
+// 21. String Repeat 
+var repeatStr = function(n, s) {
+    let str = "";
+    for (let i = 1; i <= n; i++) {
+        str = str.concat("", s);
+    }
+    return str;
+
 }
-staircase(4)
+
+
+// 22. Reversed Strings
+var solution = function (str) {
+    let s = "";
+    for (let i = str.length; i >= 0; i--) {
+        s += str.charAt(i);
+    }
+    return s;
+};
+
+
+// 23. Sum of Positive
+var positiveSum = function (arr) {
+    let sum = 0;
+    for (let i of arr) {
+        if (i > 0) {
+            sum += i;
+        }
+    }
+    return sum;
+};
+
+// 24. Grasshopper - Summation
+var summation = function (num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++){
+        sum += i;
+    }
+    return sum;
+};
+
+// 25. Convert a Boolean to a String
+var booleanToString = function (b) {
+    if (typeof b === "boolean") {
+        return b.toString();
+    }
+};
